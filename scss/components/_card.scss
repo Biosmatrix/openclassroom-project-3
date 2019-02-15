@@ -1,0 +1,9 @@
+.card {
+  position: relative;
+  height: 20rem;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba($dark, 0.15);
+}

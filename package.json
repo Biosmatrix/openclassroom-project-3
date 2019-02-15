@@ -4,7 +4,7 @@
   "description": "A project to build a website for Brooklyn Outdoor Film Festival",
   "repository": "https://github.com/Biosmatrix/brooklyn",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {"watch:sass": "node-sass scss/style.scss css/style.css -w"},
   "keywords": [
     "film",
     "festival",

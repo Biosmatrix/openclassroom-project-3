@@ -3,10 +3,10 @@
 @import "abstracts/mixins";
 @import "abstracts/variables";
 
-@import "base/animations";
 @import "base/base";
 @import "base/typography";
 @import "base/utilities";
+@import "base/animations";
 
 @import "components/bg-video";
 @import "components/button";
@@ -17,9 +17,9 @@
 @import "components/popup";
 @import "components/story";
 
-@import "layout/footer";
-@import "layout/grid";
 @import "layout/header";
 @import "layout/navigation";
+@import "layout/footer";
+@import "layout/grid";
 
 @import "pages/home";

@@ -10,14 +10,14 @@ $enable-gradients: true;
 
 // Changing the body background and text
 $body-bg: #f7f7f7f7;
-$body-color: #151417;
+$body-color: #777;
 
 // Changing the border radius of buttons
 $border-radius: 4px;
 
 // Changing the theme colors
-$primary: #28b485;
-$secondary: #55c57a;
+$primary: #55c57a;
+$secondary: #f84e66;
 $success: #2bc550;
 $info: #495dff;
 $warning: #ef8143;
@@ -26,6 +26,6 @@ $light: #dfe6ee;
 $dark: #000;
 
 // Adding (!) an additional theme color (ex. classes btn-cool, bg-cool)
-$theme-colors: (
-  "cool": #4d3fa3
-);
+// $theme-colors: (
+//   "cool": #4d3fa3
+// );
