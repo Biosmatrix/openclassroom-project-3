@@ -1,0 +1,31 @@
+{
+  "name": "brooklyn",
+  "version": "1.0.0",
+  "description": "A project to build a website for Brooklyn Outdoor Film Festival",
+  "repository": "https://github.com/Biosmatrix/brooklyn",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [
+    "film",
+    "festival",
+    "brooklyn"
+  ],
+  "author": "Amaitari Hezekiah Philip",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.2.1",
+    "jquery": "^3.3.1",
+    "node-sass": "^4.11.0",
+    "popper.js": "^1.14.4"
+  },
+  "devDependencies": {
+    "autoprefixer": "*",
+    "gulp": "^4.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-scss-lint": "^1.0.0",
+    "gulp-sourcemaps": "^2.6.4"
+  }
+}
