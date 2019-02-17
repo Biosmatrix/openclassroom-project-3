@@ -243,8 +243,7 @@ body {
     border-radius: 2px;
     position: absolute;
     z-index: 10;
-    transition: all 0.2s;
-    outline-offset: 2rem; }
+    transition: all 0.2s; }
     @media only screen and (max-width: 56.25em) {
       .composition-photo {
         float: left;
@@ -275,7 +274,6 @@ body {
           left: 0;
           transform: scale(1.1); } }
     .composition-photo:hover {
-      outline: 1.5rem solid #55c57a;
       transform: scale(1.05) translateY(-0.5rem);
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
       z-index: 20; }
@@ -599,7 +597,7 @@ body {
   position: relative;
   background-color: #5643fa;
   padding: 15rem 0;
-  margin-top: 10vh; }
+  margin-top: 40vh; }
 
 .section-features {
   padding: 10rem 0;
