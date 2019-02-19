@@ -1,4 +1,4 @@
-.header {
+.home {
   height: 85vh;
   background-image: linear-gradient(
       to right bottom,
@@ -9,12 +9,20 @@
   background-size: cover;
   background-position: top;
   position: relative;
+}
 
-  &-textbox {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+.header {
+  height: 10vh;
+
+  .bg-green {
+    background-color: $primary-dark;
   }
+}
+
+.header-textbox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }

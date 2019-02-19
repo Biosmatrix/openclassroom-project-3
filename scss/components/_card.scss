@@ -1,9 +1,26 @@
+/* Card */
 .card {
   position: relative;
-  height: 20rem;
+  height: 50rem;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   border-radius: 3px;
   overflow: hidden;
   box-shadow: 0 15px 40px rgba($dark, 0.15);
+
+  @include respond(phone) {
+    height: 50rem;
+  }
+
+  @include respond(tab-port) {
+    height: 55rem;
+  }
+
+  @include respond(tab-land) {
+    height: 55rem;
+  }
+
+  .card-img-top {
+    height: 60%;
+  }
 }
