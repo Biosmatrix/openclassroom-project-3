@@ -23,6 +23,18 @@
     transform: translate3d(-10px, 0, 0);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+
+    @include respond(phone) {
+      -webkit-transform: translate3d(0, -10px, 0);
+      transform: translate3d(0, -10px, 0);
+      -webkit-backface-visibility: hidden;
+    }
+
+    @include respond(tab-port) {
+      -webkit-transform: translate3d(0, -10px, 0);
+      transform: translate3d(0, -10px, 0);
+      -webkit-backface-visibility: hidden;
+    }
   }
 
   &:hover .overlay {
