@@ -33,27 +33,36 @@
 }
 
 .section-book {
-  padding: 10rem 0;
+  padding: 5rem 0;
   background-color: $grey-light-2;
 
-  form {
-    background-image: linear-gradient(
-      to right bottom,
-      $primary-light,
-      $primary-dark
-    );
-    margin: 0 auto;
+  .booking-container {
+    background-image: linear-gradient(to right bottom, $white, $grey-light-1);
     width: 90%;
-    padding: 6rem;
+    margin: 0 auto;
+    padding: 2rem;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($dark, 0.2);
 
     @include respond(tab-land) {
-      width: 65%;
+      width: 80%;
     }
 
     @include respond(tab-port) {
       width: 100%;
     }
   }
+
+  .booking-count {
+    @include absCenter();
+    .booking-count-message {
+      text-transform: uppercase;
+    }
+  }
+}
+
+.bounce {
+  animation: bounce 1s cubic-bezier(0.5, 0.05, 1, 0.5);
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
 }

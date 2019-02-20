@@ -138,6 +138,12 @@ body {
     opacity: 1;
     transform: scale(1); } }
 
+@keyframes bounce {
+  from {
+    transform: translateY(0); }
+  to {
+    transform: translateY(10px); } }
+
 .bg-video {
   position: absolute;
   top: 0;
@@ -364,92 +370,6 @@ body {
   .feature-box:hover {
     transform: translateY(-1.1rem) scale(1.03); }
 
-.form__group:not(:last-child) {
-  margin-bottom: 2rem; }
-
-.form__input {
-  font-size: 1.5rem;
-  font-family: inherit;
-  color: inherit;
-  padding: 1.5rem 2rem;
-  border-radius: 2px;
-  background-color: rbga(#fff, 0.5);
-  border: none;
-  border-bottom: 3px solid transparent;
-  width: 90%;
-  display: block;
-  transition: all 0.3s; }
-  @media only screen and (max-width: 56.25em) {
-    .form__input {
-      width: 100%; } }
-  .form__input:focus {
-    outline: none;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
-    border-bottom: 3px solid #55c57a; }
-  .form__input:focus:invalid {
-    border-bottom: 3px solid #f84e66; }
-  .form__input::-webkit-input-placeholder {
-    color: #999; }
-
-.form__label {
-  font-size: 1.2rem;
-  font-weight: 700;
-  margin-left: 2rem;
-  margin-top: 0.7rem;
-  display: block;
-  transition: all 0.3s; }
-
-.form__input:placeholder-shown + .form__label {
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(-4rem); }
-
-.form__radio-group {
-  width: 49%;
-  display: inline-block; }
-  @media only screen and (max-width: 56.25em) {
-    .form__radio-group {
-      width: 100%;
-      margin-bottom: 2rem; } }
-
-.form__radio-input {
-  display: none; }
-
-.form__radio-label {
-  font-size: 16px;
-  cursor: pointer;
-  position: relative;
-  padding-left: 4.5rem; }
-
-.form__radio-button {
-  height: 3rem;
-  width: 3rem;
-  border: 5px solid #55c57a;
-  border-radius: 50%;
-  display: inline-block;
-  position: absolute;
-  left: 0;
-  top: -0.4rem; }
-  .form__radio-button::after {
-    content: "";
-    display: block;
-    height: 1.3rem;
-    width: 1.3rem;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #55c57a;
-    opacity: 0;
-    transition: opacity 0.2s; }
-
-.form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
-  opacity: 1; }
-
-.section-book .row {
-  display: block; }
-
 .popup {
   height: 100vh;
   width: 100%;
@@ -664,18 +584,30 @@ body {
   margin-top: -10vh; }
 
 .section-book {
-  padding: 10rem 0;
+  padding: 5rem 0;
   background-color: #eee; }
-  .section-book form {
-    background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
-    margin: 0 auto;
+  .section-book .booking-container {
+    background-image: linear-gradient(to right bottom, #fff, #f7f7f7);
     width: 90%;
-    padding: 6rem;
+    margin: 0 auto;
+    padding: 2rem;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2); }
     @media only screen and (max-width: 75em) {
-      .section-book form {
-        width: 65%; } }
+      .section-book .booking-container {
+        width: 80%; } }
     @media only screen and (max-width: 56.25em) {
-      .section-book form {
+      .section-book .booking-container {
         width: 100%; } }
+  .section-book .booking-count {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .section-book .booking-count .booking-count-message {
+      text-transform: uppercase; }
+
+.bounce {
+  animation: bounce 1s cubic-bezier(0.5, 0.05, 1, 0.5);
+  animation-direction: alternate;
+  animation-iteration-count: infinite; }
