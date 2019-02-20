@@ -122,7 +122,7 @@
                   Absolutely Free
                 </h1>
                 <p class="heading-sub">
-                  Brooklyn film festival is the only festival that is 100% free
+                  Brooklyn film festival is the only festival that is 100% free from 5th to the 8th of August from 6:00pm to midnight each day
                 </p>
                 <p class="heading-mute">Limited seats available Pre-Register Today</p>
               </div>
@@ -338,52 +338,38 @@
             </h2>
           </div>
           <div class="row">
-            <form>
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label for="inputEmail4">Email</label>
-                  <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="inputPassword4">Password</label>
-                  <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="inputAddress">Address</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-              </div>
-              <div class="form-group">
-                <label for="inputAddress2">Address 2</label>
-                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-              </div>
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label for="inputCity">City</label>
-                  <input type="text" class="form-control" id="inputCity">
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="inputState">State</label>
-                  <select id="inputState" class="form-control">
-                    <option selected>Choose...</option>
-                    <option>...</option>
-                  </select>
-                </div>
-                <div class="form-group col-md-2">
-                  <label for="inputZip">Zip</label>
-                  <input type="text" class="form-control" id="inputZip">
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="gridCheck">
-                  <label class="form-check-label" for="gridCheck">
-                    Check me out
-                  </label>
-                </div>
-              </div>
-              <button type="submit" class="btn btn-gray-dark">Book</button>
-            </form>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <h1>Book now! 5000 spots left</h1>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <form>
+                    <div class="form-group">
+                      <label for="name">Name</label>
+                      <input type="text" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Enter name">
+                      <small id="nameHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                      </div>
+                    <div class="form-group">
+                        <label for="date">Select Date</label>
+                        <select multiple class="form-control" id="date">
+                          <option>5th</option>
+                          <option>6th</option>
+                          <option>7th</option>
+                          <option>8th</option>
+                        </select>
+                    </div>
+                    <div class="form-group form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                <button type="submit" class="btn btn-gray-dark">Book Now</button>
+              </form>
+            </div>
+            
           </div>
         </div>
       </section>
@@ -427,41 +413,55 @@
           </div>
         </div>
         <div class="row">
-          <div class="copyright u-center-text">
-            <p>All Rights Reserved &copy; Brooklyn film festival <span id="year"></span></p>
+          <div class="copyright">
+            <p class="copyright-text">All Rights Reserved &copy; Brooklyn film festival <span id="year"></span></p>
           </div>
         </div>        
       </div>
     </footer>
 
     <!-- Modal starts-->
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-      aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal fade" id="booking" tabindex="-1" role="dialog"
+      aria-labelledby="bookingTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalCenterTitle">Start booking now</h5>
+            <h5 class="modal-title" id="bookingTitle">Start booking now</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua.
-              Sed sed risus pretium quam. Aliquam sem et tortor consequat id. Volutpat odio facilisis mauris sit
-              amet massa vitae. Mi bibendum neque egestas congue. Placerat orci nulla pellentesque dignissim enim
-              sit. Vitae semper quis lectus nulla at volutpat diam ut venenatis. Malesuada pellentesque elit eget
-              gravida cum sociis natoque penatibus et. Proin fermentum leo vel orci porta non pulvinar neque laoreet.
-              Gravida neque convallis a cras semper. Molestie at elementum eu facilisis sed odio morbi quis. Faucibus
-              vitae aliquet nec ullamcorper sit amet risus nullam eget. Nam libero justo laoreet sit. Amet massa
-              vitae tortor condimentum lacinia quis vel eros donec. Sit amet facilisis magna etiam. Imperdiet sed
-              euismod nisi porta.
-            </p>
+            <div class="row">
+              <form>
+                    <div class="form-group">
+                      <label for="name">Name</label>
+                      <input type="text" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Enter name">
+                      <small id="nameHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                      </div>
+                    <div class="form-group">
+                        <label for="date">Select Date</label>
+                        <select multiple class="form-control" id="date">
+                          <option>5th</option>
+                          <option>6th</option>
+                          <option>7th</option>
+                          <option>8th</option>
+                        </select>
+                    </div>
+                    <div class="form-group form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                <button type="submit" class="btn btn-gray-dark">Book Now</button>
+              </form>
+            </div>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary">Book now</button>
-          </div>
+          
         </div>
       </div>
     </div>
