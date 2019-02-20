@@ -609,14 +609,13 @@ body {
 
 .footer {
   background-image: linear-gradient(to right bottom, rgba(40, 180, 133, 0.8), rgba(85, 197, 122, 0.8));
-  padding: 1.3rem 0;
-  font-size: 1.1rem;
+  padding: 1rem 0;
+  font-size: 1rem;
   color: #fff; }
   @media only screen and (max-width: 56.25em) {
     .footer {
       padding: 1rem 0; } }
   .footer .navigation {
-    padding-top: 2rem;
     display: flex;
     align-content: space-between; }
     @media only screen and (max-width: 56.25em) {
@@ -639,11 +638,9 @@ body {
         .footer .navigation .list .item:hover, .footer .navigation .list .item:active {
           color: #fff;
           border-bottom: 2px solid #fff; }
-  .footer .copyright {
-    padding-top: 2rem; }
-    @media only screen and (max-width: 56.25em) {
-      .footer .copyright {
-        width: 100%; } }
+  @media only screen and (max-width: 56.25em) {
+    .footer .copyright {
+      width: 100%; } }
 
 .section-about {
   background-color: #f7f7f7;
