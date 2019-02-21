@@ -44,6 +44,11 @@
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($dark, 0.2);
 
+    form {
+      padding: 2rem;
+      // box-shadow: 0 1.5rem 1rem rgba($dark, 0.2);
+    }
+
     @include respond(tab-land) {
       width: 80%;
     }
@@ -58,6 +63,9 @@
     .booking-count-message {
       text-transform: uppercase;
     }
+    h1 {
+      font-size: 4rem;
+    }
   }
 }
 
@@ -65,4 +73,9 @@
   animation: bounce 1s cubic-bezier(0.5, 0.05, 1, 0.5);
   animation-direction: alternate;
   animation-iteration-count: infinite;
+}
+
+.modal-content iframe {
+  margin: 0 auto;
+  display: block;
 }

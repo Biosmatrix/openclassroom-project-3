@@ -529,7 +529,7 @@ body {
 
 .footer {
   background-image: linear-gradient(to right bottom, rgba(40, 180, 133, 0.8), rgba(85, 197, 122, 0.8));
-  padding: 1rem 0;
+  padding: 3rem 0;
   font-size: 1rem;
   color: #fff; }
   @media only screen and (max-width: 56.25em) {
@@ -547,7 +547,8 @@ body {
       margin-right: 10px; }
       .footer .navigation .list .item {
         display: inline-block;
-        color: #fff; }
+        color: #fff;
+        font-size: 1rem; }
         .footer .navigation .list .item:not(:last-child) {
           margin-right: 1.5rem; }
         .footer .navigation .list .item:link, .footer .navigation .list .item:visited {
@@ -558,9 +559,6 @@ body {
         .footer .navigation .list .item:hover, .footer .navigation .list .item:active {
           color: #fff;
           border-bottom: 2px solid #fff; }
-  @media only screen and (max-width: 56.25em) {
-    .footer .copyright {
-      width: 100%; } }
 
 .section-about {
   background-color: #f7f7f7;
@@ -593,6 +591,8 @@ body {
     padding: 2rem;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2); }
+    .section-book .booking-container form {
+      padding: 2rem; }
     @media only screen and (max-width: 75em) {
       .section-book .booking-container {
         width: 80%; } }
@@ -606,8 +606,14 @@ body {
     transform: translate(-50%, -50%); }
     .section-book .booking-count .booking-count-message {
       text-transform: uppercase; }
+    .section-book .booking-count h1 {
+      font-size: 4rem; }
 
 .bounce {
   animation: bounce 1s cubic-bezier(0.5, 0.05, 1, 0.5);
   animation-direction: alternate;
   animation-iteration-count: infinite; }
+
+.modal-content iframe {
+  margin: 0 auto;
+  display: block; }
