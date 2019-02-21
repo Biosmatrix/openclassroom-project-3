@@ -1,71 +1,60 @@
 .section-about {
   background-color: $grey-light-1;
-  padding: 10rem 0;
-  margin-top: -10vh;
+  padding: 10rem 0 20rem 0;
+  // margin-top: -10vh;
+
+  @include respond(phone) {
+    padding: 5rem 0 10rem 0;
+  }
+
+  @include respond(tab-land) {
+    padding: 10rem 0 20rem 0;
+  }
+
+  @include respond(tab-port) {
+    padding: 10rem 0 20rem 0;
+  }
 }
 
 .section-cta {
   position: relative;
   background-image: linear-gradient(
-    to right bottom,
-    $primary-light,
-    $primary-dark
-  );
-  padding: 15rem 0;
-  margin-top: 40vh;
-}
-
-.section-features {
-  padding: 10rem 0;
-  background-image: linear-gradient(
-    to right bottom,
-    rgba($grey-dark, 0.8),
-    rgba($grey-dark-2, 0.5)
-  );
+      to right bottom,
+      rgba($dark, 0.9),
+      rgba($dark, 0.9)
+    ),
+    url(../img/hero3.jpg);
   background-size: cover;
-  // margin-top: 5rem;
+  background-position: center;
+  position: relative;
+  padding: 15rem 0;
+  // margin-top: 40vh;
+
+  @include respond(phone) {
+    padding: 5rem 0;
+  }
+
+  @include respond(tab-land) {
+    padding: 10rem 0;
+  }
+
+  @include respond(tab-port) {
+    padding: 10rem 0;
+  }
 }
 
 .section-movies {
   background-color: $grey-light-1;
   padding: 10rem 0 5rem 0;
-  margin-top: -10vh;
+  // margin-top: -10vh;
 }
 
-.section-book {
-  padding: 5rem 0;
+.section-schedule {
   background-color: $grey-light-2;
-
-  .booking-container {
-    background-image: linear-gradient(to right bottom, $white, $grey-light-1);
-    width: 90%;
-    margin: 0 auto;
-    padding: 2rem;
-    border-radius: 3px;
-    box-shadow: 0 1.5rem 4rem rgba($dark, 0.2);
-
-    form {
-      padding: 2rem;
-      // box-shadow: 0 1.5rem 1rem rgba($dark, 0.2);
-    }
-
-    @include respond(tab-land) {
-      width: 80%;
-    }
-
-    @include respond(tab-port) {
-      width: 100%;
-    }
-  }
-
-  .booking-count {
-    @include absCenter();
-    .booking-count-message {
-      text-transform: uppercase;
-    }
-    h1 {
-      font-size: 4rem;
-    }
+  padding: 5rem;
+  // margin-top: -10vh;
+  .schedule {
+    margin-bottom: 1rem;
   }
 }
 
@@ -78,4 +67,17 @@
 .modal-content iframe {
   margin: 0 auto;
   display: block;
+}
+
+// Parallax Effect
+.parallax {
+  background-attachment: fixed;
+  /* Turn off parallax scrolling for tablets and phones */
+  @include respond(tab-land) {
+    background-attachment: scroll;
+  }
+
+  @include respond(tab-port) {
+    background-attachment: scroll;
+  }
 }

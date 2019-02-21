@@ -1,7 +1,7 @@
 /* Card */
 .card {
   position: relative;
-  height: 50rem;
+  height: 20rem;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   border-radius: 3px;
@@ -9,15 +9,15 @@
   box-shadow: 0 15px 40px rgba($dark, 0.15);
 
   @include respond(phone) {
-    height: 50rem;
+    height: 20rem;
   }
 
   @include respond(tab-port) {
-    height: 55rem;
+    height: 20rem;
   }
 
   @include respond(tab-land) {
-    height: 55rem;
+    height: 20rem;
   }
 
   .img-responsive {

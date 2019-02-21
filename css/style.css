@@ -220,7 +220,7 @@ body {
 /* Card */
 .card {
   position: relative;
-  height: 50rem;
+  height: 20rem;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   border-radius: 3px;
@@ -228,13 +228,13 @@ body {
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15); }
   @media only screen and (max-width: 37.5em) {
     .card {
-      height: 50rem; } }
+      height: 20rem; } }
   @media only screen and (max-width: 56.25em) {
     .card {
-      height: 55rem; } }
+      height: 20rem; } }
   @media only screen and (max-width: 75em) {
     .card {
-      height: 55rem; } }
+      height: 20rem; } }
   .card .img-responsive {
     height: 60%; }
 
@@ -510,7 +510,7 @@ body {
 
 .home {
   height: 85vh;
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/hero.jpg);
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/hero1.jpg);
   background-size: cover;
   background-position: top;
   position: relative; }
@@ -532,9 +532,17 @@ body {
   padding: 3rem 0;
   font-size: 1rem;
   color: #fff; }
+  @media only screen and (max-width: 37.5em) {
+    .footer {
+      padding: 2rem 0; }
+      .footer .container {
+        text-align: center; } }
+  @media only screen and (max-width: 75em) {
+    .footer {
+      padding: 3rem 0; } }
   @media only screen and (max-width: 56.25em) {
     .footer {
-      padding: 1rem 0; } }
+      padding: 2rem 0; } }
   .footer .navigation {
     display: flex;
     align-content: space-between; }
@@ -562,52 +570,43 @@ body {
 
 .section-about {
   background-color: #f7f7f7;
-  padding: 10rem 0;
-  margin-top: -10vh; }
+  padding: 10rem 0 20rem 0; }
+  @media only screen and (max-width: 37.5em) {
+    .section-about {
+      padding: 5rem 0 10rem 0; } }
+  @media only screen and (max-width: 75em) {
+    .section-about {
+      padding: 10rem 0 20rem 0; } }
+  @media only screen and (max-width: 56.25em) {
+    .section-about {
+      padding: 10rem 0 20rem 0; } }
 
 .section-cta {
   position: relative;
-  background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
-  padding: 15rem 0;
-  margin-top: 40vh; }
-
-.section-features {
-  padding: 10rem 0;
-  background-image: linear-gradient(to right bottom, rgba(119, 119, 119, 0.8), rgba(153, 153, 153, 0.5));
-  background-size: cover; }
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../img/hero3.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 15rem 0; }
+  @media only screen and (max-width: 37.5em) {
+    .section-cta {
+      padding: 5rem 0; } }
+  @media only screen and (max-width: 75em) {
+    .section-cta {
+      padding: 10rem 0; } }
+  @media only screen and (max-width: 56.25em) {
+    .section-cta {
+      padding: 10rem 0; } }
 
 .section-movies {
   background-color: #f7f7f7;
-  padding: 10rem 0 5rem 0;
-  margin-top: -10vh; }
+  padding: 10rem 0 5rem 0; }
 
-.section-book {
-  padding: 5rem 0;
-  background-color: #eee; }
-  .section-book .booking-container {
-    background-image: linear-gradient(to right bottom, #fff, #f7f7f7);
-    width: 90%;
-    margin: 0 auto;
-    padding: 2rem;
-    border-radius: 3px;
-    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2); }
-    .section-book .booking-container form {
-      padding: 2rem; }
-    @media only screen and (max-width: 75em) {
-      .section-book .booking-container {
-        width: 80%; } }
-    @media only screen and (max-width: 56.25em) {
-      .section-book .booking-container {
-        width: 100%; } }
-  .section-book .booking-count {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
-    .section-book .booking-count .booking-count-message {
-      text-transform: uppercase; }
-    .section-book .booking-count h1 {
-      font-size: 4rem; }
+.section-schedule {
+  background-color: #eee;
+  padding: 5rem; }
+  .section-schedule .schedule {
+    margin-bottom: 1rem; }
 
 .bounce {
   animation: bounce 1s cubic-bezier(0.5, 0.05, 1, 0.5);
@@ -617,3 +616,13 @@ body {
 .modal-content iframe {
   margin: 0 auto;
   display: block; }
+
+.parallax {
+  background-attachment: fixed;
+  /* Turn off parallax scrolling for tablets and phones */ }
+  @media only screen and (max-width: 75em) {
+    .parallax {
+      background-attachment: scroll; } }
+  @media only screen and (max-width: 56.25em) {
+    .parallax {
+      background-attachment: scroll; } }
