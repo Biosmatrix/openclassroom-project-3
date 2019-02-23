@@ -7,11 +7,13 @@
   }
 
   @include respond(tab-land) {
-    padding: 10rem 0 20rem 0;
+    padding: 10rem 0 10rem 0;
+    padding-top: 5rem;
   }
 
   @include respond(tab-port) {
-    padding: 10rem 0 20rem 0;
+    padding: 10rem 0 10rem 0;
+    padding-top: 5rem;
   }
 }
 
@@ -30,15 +32,25 @@
   // margin-top: 40vh;
 
   @include respond(phone) {
-    padding: 5rem 0;
+    padding: 10rem 0;
+    h1 {
+      font-size: 2rem;
+    }
   }
 
   @include respond(tab-land) {
-    padding: 10rem 0;
+    padding: 15rem 0;
+
+    h1 {
+      font-size: 2rem;
+    }
   }
 
   @include respond(tab-port) {
-    padding: 10rem 0;
+    padding: 15rem 0;
+    h1 {
+      font-size: 2rem;
+    }
   }
 }
 
@@ -66,11 +78,25 @@
   td {
     padding-bottom: 22px;
     vertical-align: top;
+    @include respond(tab-port) {
+      padding-bottom: 15px;
+    }
+
+    @include respond(phone) {
+      padding-bottom: 15px;
+    }
   }
   th {
     padding-right: 45px;
     text-align: right;
     width: 20%;
+    @include respond(tab-port) {
+      font-size: 1rem;
+    }
+
+    @include respond(phone) {
+      font-size: 1rem;
+    }
   }
   td {
     width: 40%;
@@ -90,7 +116,7 @@
     text-transform: uppercase;
   }
   tbody td {
-    border-top: 1px solid $dark;
+    // border-top: 1px solid $dark;
     padding-top: 21px;
   }
   tbody td:first-of-type {
@@ -108,9 +134,17 @@
   }
   table h4 {
     margin-bottom: 0;
+
+    @include respond(tab-port) {
+      font-size: 1rem;
+    }
+
+    @include respond(phone) {
+      font-size: 1rem;
+    }
   }
   .schedule-offset {
-    color: $grey-light-2;
+    color: $grey-dark;
   }
 }
 
@@ -119,6 +153,14 @@
 .news {
   padding: 10rem 0;
   color: $dark;
+
+  @include respond(tab-port) {
+    padding: 5rem 0;
+  }
+
+  @include respond(phone) {
+    padding: 5rem 0;
+  }
 
   &-post {
     padding: 0 0.5rem;
@@ -129,6 +171,14 @@
     font-size: 1.4rem;
     // color: #9a9a9a;
     margin-top: 1rem;
+
+    @include respond(tab-port) {
+      font-size: 1rem;
+    }
+
+    @include respond(phone) {
+      font-size: 1rem;
+    }
   }
 
   &-post h3 {
@@ -138,12 +188,28 @@
 
     text-transform: uppercase;
     letter-spacing: 0.08rem;
+
+    @include respond(tab-port) {
+      font-size: 1rem;
+    }
+
+    @include respond(phone) {
+      font-size: 1rem;
+    }
   }
 
   &-post &-post-desc {
     font-size: 1.4rem;
     // color: #4a4a4a;
     line-height: 1.6;
+
+    @include respond(tab-port) {
+      font-size: 1rem;
+    }
+
+    @include respond(phone) {
+      font-size: 1rem;
+    }
   }
   &-post &-post-desc a {
     color: $primary;

@@ -68,11 +68,11 @@ body {
   transition: all 0.2s;
 
   @include respond(tab-port) {
-    font-size: 30px;
+    font-size: 20px;
   }
 
   @include respond(phone) {
-    font-size: 25px;
+    font-size: 20px;
   }
 }
 
