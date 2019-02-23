@@ -10,7 +10,8 @@
     transition: all 0.2s;
 
     @include respond(tab-port) {
-      float: left;
+      display: flex;
+      flex-direction: column;
       position: relative;
       width: 33.33333333%;
       box-shadow: 0 1.5rem 3rem rgba($dark, 0.2);

@@ -1,12 +1,8 @@
 .footer {
-  background-image: linear-gradient(
-    to right bottom,
-    rgba($primary-dark, 0.8),
-    rgba($primary, 0.8)
-  );
-  padding: 3rem 0;
+  background-color: $grey-light-2;
+  padding: 5rem 0;
   font-size: 1rem;
-  color: $white;
+  color: $dark;
 
   @include respond(phone) {
     padding: 2rem 0;
@@ -24,39 +20,20 @@
     padding: 2rem 0;
   }
 
-  .navigation {
-    display: flex;
-    align-content: space-between;
-
-    @include respond(tab-port) {
-      width: 100%;
-      text-align: center;
-    }
-
-    .list {
-      list-style: none;
-      margin-right: 10px;
-
-      .item {
+  .links {
+    .contact-info,
+    a {
+      color: $dark;
+      &:link,
+      &:visited {
+        text-decoration: none;
         display: inline-block;
-        color: $white;
-        font-size: 1rem;
-
-        &:not(:last-child) {
-          margin-right: 1.5rem;
-        }
-        &:link,
-        &:visited {
-          text-decoration: none;
-          text-transform: uppercase;
-          display: inline-block;
-          transition: all 0.2s;
-        }
-        &:hover,
-        &:active {
-          color: $white;
-          border-bottom: 2px solid $white;
-        }
+        transition: all 0.2s;
+      }
+      &:hover,
+      &:active {
+        // color: $white;
+        border-bottom: 2px solid $white;
       }
     }
   }

@@ -1,7 +1,6 @@
 .section-about {
   background-color: $grey-light-1;
   padding: 10rem 0 20rem 0;
-  // margin-top: -10vh;
 
   @include respond(phone) {
     padding: 5rem 0 10rem 0;
@@ -52,12 +51,111 @@
 .section-schedule {
   background-color: $grey-light-2;
   padding: 5rem;
-  // margin-top: -10vh;
   .schedule {
     margin-bottom: 1rem;
   }
+
+  table {
+    margin-bottom: 44px;
+    width: 100%;
+  }
+  table:last-child {
+    margin-bottom: 0;
+  }
+  th,
+  td {
+    padding-bottom: 22px;
+    vertical-align: top;
+  }
+  th {
+    padding-right: 45px;
+    text-align: right;
+    width: 20%;
+  }
+  td {
+    width: 40%;
+  }
+  thead {
+    line-height: 44px;
+  }
+  thead th {
+    color: $primary;
+    font-size: 24px;
+  }
+  tbody th {
+    color: $dark;
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 22px;
+    text-transform: uppercase;
+  }
+  tbody td {
+    border-top: 1px solid $dark;
+    padding-top: 21px;
+  }
+  tbody td:first-of-type {
+    padding-right: 15px;
+  }
+  tbody td:last-of-type {
+    padding-left: 15px;
+  }
+  tbody td:only-of-type {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  table a {
+    color: $grey-dark;
+  }
+  table h4 {
+    margin-bottom: 0;
+  }
+  .schedule-offset {
+    color: $grey-light-2;
+  }
 }
 
+/* NEWS SECTION */
+
+.news {
+  padding: 10rem 0;
+  color: $dark;
+
+  &-post {
+    padding: 0 0.5rem;
+    margin-bottom: 3rem;
+  }
+
+  &-post &-post-date {
+    font-size: 1.4rem;
+    // color: #9a9a9a;
+    margin-top: 1rem;
+  }
+
+  &-post h3 {
+    font-size: 2rem;
+    // color: #4a4a4a;
+    line-height: 1.4;
+
+    text-transform: uppercase;
+    letter-spacing: 0.08rem;
+  }
+
+  &-post &-post-desc {
+    font-size: 1.4rem;
+    // color: #4a4a4a;
+    line-height: 1.6;
+  }
+  &-post &-post-desc a {
+    color: $primary;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  &-show-more {
+    text-align: center;
+  }
+}
+
+/* END OF NEWS SECTION */
 .bounce {
   animation: bounce 1s cubic-bezier(0.5, 0.05, 1, 0.5);
   animation-direction: alternate;
