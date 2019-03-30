@@ -8,44 +8,6 @@ $(document).ready(function() {
     $("#trailerModal").modal("show");
   });
 
-  // scroll to id
-  $("a[href^='#']").click(function(e) {
-    e.preventDefault();
-    var position = $($(this).attr("href")).offset().top;
-    $("body, html").animate(
-      {
-        scrollTop: position
-      },
-      700 /* speed */
-    );
-  });
-
-  // Scroll back to top
-  if ($("#back-to-top").length) {
-    var scrollTrigger = 100;
-    var backToTop = function() {
-      var scrollTop = $(window).scrollTop();
-      if (scrollTop > scrollTrigger) {
-        $("#back-to-top").addClass("show");
-      } else {
-        $("#back-to-top").removeClass("show");
-      }
-    };
-    backToTop();
-    $(window).on("scroll", function() {
-      backToTop();
-    });
-    $("#back-to-top").on("click", function(e) {
-      e.preventDefault();
-      $("html,body").animate(
-        {
-          scrollTop: 0
-        },
-        700
-      );
-    });
-  }
-
   $("#trailerModal").on("hide.bs.modal", function() {
     $("#trailerVideo").attr("src", "");
   });
